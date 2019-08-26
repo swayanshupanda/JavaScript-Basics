@@ -19,13 +19,7 @@ if (marksObtained == undefined || marksObtained == null || marksObtained == ''){
     var totalMarks = 100
 
     var percentageOfMarks = (marksObtained / totalMarks) * 100
-
-    if (percentageOfMarks >= 90){
-        isTopper = true
-    } else {
-        isTopper = false
-    }
-
+    isTopper = (percentageOfMarks >= 90)?true:false
     alert(isTopper)
 
 }
